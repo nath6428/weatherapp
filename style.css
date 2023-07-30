@@ -1,0 +1,33 @@
+
+
+
+body{
+
+    --primary-color: #89bbfe;
+    background-color: var(--primary-color);
+    margin: 0;
+    display: flex;
+}
+
+.side-div{
+    
+    width: 30vw;
+    height: 100vh;
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+.main-div{
+    
+    background-color: #0353A4;
+        width: 40vw;
+        height: 100vh;
+    @media (max-width: 1023px) {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    border-radius: 30px;
+
+}
+
