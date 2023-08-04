@@ -1,0 +1,41 @@
+{
+    "location":{
+       "name":"Saint Petersburg",
+       "region":"Saint Petersburg City",
+       "country":"Russia",
+       "lat":59.89,
+       "lon":30.26,
+       "tz_id":"Europe/Moscow",
+       "localtime_epoch":1690787468,
+       "localtime":"2023-07-31 10:11"
+    },
+    "current":{
+       "last_updated_epoch":1690786800,
+       "last_updated":"2023-07-31 10:00",
+       "temp_c":21.0,
+       "temp_f":69.8,
+       "is_day":1,
+       "condition":{
+          "text":"Sunny",
+          "icon":"//cdn.weatherapi.com/weather/64x64/day/113.png",
+          "code":1000
+       },
+       "wind_mph":6.9,
+       "wind_kph":11.2,
+       "wind_degree":110,
+       "wind_dir":"ESE",
+       "pressure_mb":1006.0,
+       "pressure_in":29.71,
+       "precip_mm":0.0,
+       "precip_in":0.0,
+       "humidity":69,
+       "cloud":0,
+       "feelslike_c":21.0,
+       "feelslike_f":69.8,
+       "vis_km":10.0,
+       "vis_miles":6.0,
+       "uv":6.0,
+       "gust_mph":9.2,
+       "gust_kph":14.8
+    }
+ }
