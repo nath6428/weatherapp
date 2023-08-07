@@ -1,3 +1,5 @@
+import { createForecast } from "./forecast.js"
+
 const temperature = document.querySelector(".degrees")
 const degreesSymbol = document.querySelector(".degrees-symbol")
 export const searchBar = document.querySelector(".search-bar")
@@ -17,5 +19,11 @@ export function getWeatherInfofetch(city){
     .then(resp => resp.json())
     .then((data) => writeToDOM(data))
     .catch(() => console.error("Error: WeatherAPI"))
+    
+    fetch("https://api.weatherapi.com/v1/forecast.json?key=2e710cbdcacf4a0290175251232707&q=" + city + "&days=7&aqi=no&alerts=no")
+    .then(resp => resp.json())
+    .then((data) => createForecast(data))
+    .catch(() => console.error("Error: ForecastAPI"))
 
 }
+

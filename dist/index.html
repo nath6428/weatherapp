@@ -13,12 +13,12 @@
         
         <div class = side-div></div>
         <div class="main-div">
-           
-            <div class="search-container">
-                <input type = "search" class="search-bar" list="cities-list" placeholder="Search for a city..." autocomplete="off">               
-            </div>
-            <div class="autocomplete-divs-container"></div>
             <div class="temperature-container">
+                
+                 <div class="search-container">
+                     <input type = "search" class="search-bar" list="cities-list" placeholder="Search for a city..." autocomplete="off">               
+                 </div>
+                 <div class="autocomplete-divs-container"></div>
                 <div class="degrees-container">
                     <p class="degrees">
                     </p>
@@ -30,20 +30,13 @@
                     <p class="weather-description">
                     </p>
                 </div>
-                
-                
+        
             </div>
 
-
-
-
-
-
-
-
-
-
-
+            <div class="forecast-bar">
+                
+            </div>
+                    
 
         </div>
         <div class = side-div></div>
@@ -55,8 +48,8 @@
 
 
 
-        <script src="../src/searchbar.js" type="module" defer></script>
+        <script src="../src/searchbar.js" type="module" async defer></script>
         <script src="../src/index.js" type = "module" async defer></script>
-        <script src="../src/test.js"></script>
+        <script src="../src/forecast.js" type = "module" async defer></script>
     </body>
 </html>

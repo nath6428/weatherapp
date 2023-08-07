@@ -9,7 +9,7 @@ function autocomplete(){
     autocompleteContainersDiv.innerHTML = ''
     
     let cityList = citiesList.filter(function(city){
-        
+    
        return city.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").startsWith(searchBar.value.toLowerCase())
 
     }) 
@@ -33,6 +33,8 @@ function autocomplete(){
 
 searchBar.addEventListener('input', () => {(searchBar.value.length > 0) ? autocomplete() : {}})
 mainDiv.addEventListener('click', () => {autocompleteContainersDiv.innerHTML = ''})
+
+
 function citySelected(button){
 
     let cityName = button.value

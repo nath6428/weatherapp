@@ -45,10 +45,12 @@ p{
 }
 
 .search-container{
-
+    position: absolute;
+    top: 3vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-self: center;
 
 }
 .search-bar{
@@ -68,8 +70,10 @@ p{
 
 .autocomplete-divs-container{
     
+    
     align-self: center;
-    height: fit-content;
+    max-height: 32vh;
+    margin-top: -6vh;
     width: 75%;
     background-color: transparent;
     display: flex;
@@ -78,13 +82,15 @@ p{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
+    align-content: flex-start;
+    justify-items: flex-start;
 
 }
 
 .button-28 {
     appearance: none;
     background-color: var(--primary-color);
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     box-sizing: border-box;
     color: #3B3B3B;
     cursor: pointer;
@@ -94,7 +100,7 @@ p{
     font-weight: 600;
     line-height: normal;
     margin: 0;
-    min-height: 60px;
+    height: 6.4vh;
     min-width: 0;
     outline: none;
     padding: 16px 24px;
@@ -106,6 +112,7 @@ p{
     touch-action: manipulation;
     width: 100%;
     will-change: transform;
+    z-index: 4;
   }
   
   .button-28:disabled {
@@ -133,10 +140,11 @@ p{
     z-index: 0;
     width: 40vw;
     height: 50vh;
-
+    padding: 2vw;
     
     background-image: url(../images/sunny.jpeg);
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -149,7 +157,10 @@ p{
 }
 
 .degrees-container{
-
+    
+    position: absolute;
+    justify-self: center;
+    align-self: center;
     margin: auto;
     width: 15vw;
     height: 15vw;
@@ -180,6 +191,58 @@ p{
     justify-content: center;
     margin-top: 32vh;
     font-size: larger;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
 }
   
-  
+.forecast-bar{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    height: 15vh;
+    margin: calc(50vh - 2vw) -2vw 0 -2vw;
+    width: 40vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 2vh 0 2vh 2vh;
+    
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+
+}
+
+::-webkit-scrollbar {
+
+    background: transparent;
+    padding: 23px;
+    border-radius: 10px;
+    height: 1vh;
+    
+}
+
+::-webkit-scrollbar-thumb{
+
+    background: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.forecast-day-div{
+
+    background-color: transparent;
+    min-height: 8vh;
+    min-width: 6vw;
+    margin-right: 2vw;
+    
+
+}
