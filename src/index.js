@@ -21,7 +21,7 @@ export function getWeatherInfofetch(city){
     var weatherData
     var astronomy
 
-    fetch("http://api.weatherapi.com/v1/current.json?key=2e710cbdcacf4a0290175251232707&q=" + city)
+    fetch("https://api.weatherapi.com/v1/current.json?key=2e710cbdcacf4a0290175251232707&q=" + city)
     .then(resp => resp.json())
     .then((data) => {
         writeToDOM(data)
