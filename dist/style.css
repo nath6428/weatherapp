@@ -9,6 +9,10 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    caret-color: transparent;
+    font-family: "Goudy Old Style", serif;
+    font-size: larger;
+        font-weight: 600;
 }
 
 p{
@@ -59,13 +63,14 @@ p{
 }
 .search-bar{
     
-
+    caret-color: black;
     height: 3vh;
     width: 75%;
     background-color: transparent;
     border-color: transparent transparent var(--primary-color) transparent;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Goudy Old Style", serif;
+    font-size: larger;
     text-align: center;
     font-size: larger;
     outline: none;
@@ -100,8 +105,8 @@ p{
     color: #3B3B3B;
     cursor: pointer;
     display: inline-block;
-    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
+    font-family: "Palantino", serif;
+    font-size: larger;
     font-weight: 600;
     line-height: normal;
     margin: 0;
@@ -315,4 +320,14 @@ p{
 
     width: 100%;
     height: 1%;
+}
+
+.side-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+
 }
